@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for Tour in all_tours %}
+
+        <a href = "specific_tour/">{{Tour.title}}</a>
+        <h1>{{Tour.date}}</h1>
+        <h1>{{Tour.country}}</h1>
+
+    {% endfor %}
+{% endblock %}
