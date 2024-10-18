@@ -3,9 +3,9 @@
 {% block content %}
     {% for Tour in all_tours %}
 
-        <a href = "specific_tour/">{{Tour.title}}</a>
+        <a href = "specific_tour/" id = "{{Tour.id}}" class = "tourUrl">{{Tour.title}}</a>
         <h1>{{Tour.date}}</h1>
         <h1>{{Tour.country}}</h1>
-
     {% endfor %}
+    <script src = "{{url_for('tour_app.static',filename = 'js/tour.js')}}"></script>
 {% endblock %}

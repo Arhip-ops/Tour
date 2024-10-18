@@ -1,6 +1,13 @@
-// let cookie = document.cookie
+const urls = document.querySelectorAll(".tourUrl")
 
-// for (let count = 0; count < cookie.split(" ").length; count ++) {
-//     if (cookie.split(" ") =! 'tour =')
-
-// }
+for (let count = 0; count < urls.length; count ++){
+    let url = urls[count]
+    url.addEventListener(
+        type = "click",
+        listener = function (
+            event
+        ){
+           document.cookie = `tour=${url.id}; path = /`
+        }
+    )
+}
