@@ -1,5 +1,8 @@
 import flask 
-
+from main.settings import DATABASE
+from registration.models import Tour
 
 def render_specific_tour():
-    return flask.render_template(template_name_or_list="specific_tour.html")
+    id = flask.request.cookies.get("tour")
+    tour = Tour.query.get(id)
+    return flask.render_template(template_name_or_list="specific_tour.html", tour = tour)
