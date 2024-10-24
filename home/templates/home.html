@@ -5,6 +5,8 @@
 {% block content %}
     <link rel="stylesheet" href="{{url_for('home_app.static', filename = 'css/style.css')}}">
     <img src="{{url_for('home_app.static', filename = 'images/frame_background.png')}}" alt="" class="frame_background">
+    <script src = "{{url_for('home_app.static', filename = 'js/home.js')}}"></script>
+
     <h1>Головна Сторінка</h1>
     <h1 class = "otzuv">Залишити відгук</h1>
     <form method = "POST">
@@ -15,6 +17,13 @@
         <h1 class = 'review'>Відгук</h1>
         <textarea class = 'review-input' name="review" id="" placeholder="Відгук"></textarea>
         <button class = 'send' type="submit">Надіслати</button>
+        
     </form>
+    <div class = "emailDiv" style = "display: none;">
+        <form method="POST" class = "emailForm" enctype = "multipart/form-data">
+            <h1 class = 'h1'>Письмо успішно надіслано!</h1>
+        </form>
+
+    </div>
 
 {% endblock %}

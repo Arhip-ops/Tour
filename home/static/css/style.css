@@ -87,3 +87,34 @@ a{
     font-size: 30px;
     color: rgb(150, 150, 150);
 }
+.frameDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 500px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .emailForm {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 25px;
+    width: 500px;
+    z-index: 1000;
+  }
