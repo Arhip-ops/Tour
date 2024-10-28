@@ -1,10 +1,9 @@
-const buttonSend = document.querySelector(".send")
-
+const buttonSend = document.querySelector(selectors = ".send")
+console.log(buttonSend)
 buttonSend.addEventListener(
     type = "click",
     listener = (event) => {
-        document.querySelector(".emailDiv").style.display = "flex"
-        console.log("12312")
+        document.querySelector(selectors = ".emailDiv").style.display = "flex"
+        
     }
-
 )
