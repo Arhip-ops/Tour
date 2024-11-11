@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Сторінка конкретного туру</h1>
-    <hr>
+    <link rel="stylesheet" href="{{url_for('specific_tour_app.static', filename = 'css/style.css')}}">
+    <img src="{{url_for('tour_app.static', filename = 'images/background.png')}}" alt="" class="frame_background">
+    <img src="{{url_for('tour_app.static', filename = 'images/urls.png')}}" alt="" class="urls">
+    <img src="{{url_for('specific_tour_app.static', filename = 'images/background_tour.png')}}" alt="" class="background_tour">
+    <img src="{{url_for('tour_app.static', filename = 'images/' + tour.title +'.png')}}" alt="" class="image_tour">
     <h1 class = "title">{{tour.title}}</h1>
     <h1 class = "date">{{tour.date}}</h1>
     <h1 class = "country">{{tour.country}}</h1>
-    <h1 class = "price">{{tour.price}}</h1>
+    <h1 class = "price">{{tour.price}} грн</h1>
     <h1 class = "description">{{tour.description}}</h1>
 
 {% endblock %}

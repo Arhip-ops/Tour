@@ -1,0 +1,112 @@
+.frame_background{
+    position: fixed;
+    left: -10px;
+    top: -10px;
+    width: 1550px;
+    height: 788px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 34.85px;
+    color:white;
+    margin-left: 80.16px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+
+}
+
+.reg{
+    position: absolute;
+    top: 22px;
+    left: 15px;
+
+}
+
+.log{
+    position: absolute;
+    top: 22px;
+    left: 290px;    
+}
+
+.main {
+    position: absolute;
+    top: 22px;
+    left: 590px;
+    font-size: 34.85px;
+    color:white;
+    margin-left: 80.16px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.tour{
+    position: absolute;
+    top: 22px;
+    left: 810px;
+    text-decoration: underline;
+}
+
+.urls {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    height: 100px;
+    width: 100%;
+}
+
+.background_tour{
+    position: absolute;
+    height: 460px;
+    width: 942px;
+    left: 290px;
+    top: 188px;
+}
+.image_tour{
+    position: absolute;
+    width: 404px;
+    height: 400px;
+    top: 218px;
+    border-radius: 10%;
+    left: 320px;
+}   
+
+.title{
+    position: absolute; 
+    left: 791px;
+    top: 220px;
+    font-size: 40px;
+    color: white;  
+}
+
+.date{
+    position: absolute; 
+    left: 791px;
+    top: 287px;
+    font-size: 40px;
+    color: white;  
+}
+
+.country{
+    position: absolute; 
+    left: 791px;
+    top: 354px;
+    font-size: 40px;
+    color: white;  
+}
+
+.price{
+    position: absolute; 
+    left: 791px;
+    top: 416px;
+    font-size: 40px;
+    color: white;  
+}
+
+.description{
+    position: absolute; 
+    left: 791px;
+    top: 482px;
+    font-size: 30px;
+    color: white;  
+}

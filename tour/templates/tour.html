@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% for Tour in all_tours %}
-
+    <link rel="stylesheet" href="{{url_for('tour_app.static', filename = 'css/style.css')}}">
+    <img src="{{url_for('tour_app.static', filename = 'images/background.png')}}" alt="" class="frame_background">
+    <img src="{{url_for('tour_app.static', filename = 'images/urls.png')}}" alt="" class='urls'>
+    {% for Tour in all_tours %} 
+        <img src="{{url_for('tour_app.static', filename = 'images/backgroundTour.png')}}" alt="" class = "backTour">
+        <img src="{{url_for('tour_app.static', filename = 'images/' + Tour.title + '.png')}}" alt="" class = "image">
         <a href = "specific_tour/" id = "{{Tour.id}}" class = "tourUrl">{{Tour.title}}</a>
-        <h1>{{Tour.date}}</h1>
-        <h1>{{Tour.country}}</h1>
+        <h1 class="h1Date">{{Tour.date}}</h1>
+        <h1 class="h1Country">{{Tour.country}}</h1>
+
+
     {% endfor %}
-    <script src = "{{url_for('tour_app.static',filename = 'js/tour.js')}}"></script>
+    <h1 class = 'circle'></h1>
+    <script src = "{{url_for('tour_app.static',filename = 'js/tour.js')}}" class="jsScript"></script>
 {% endblock %}
