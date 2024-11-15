@@ -1,3 +1,6 @@
+.monstrat {
+    font-family: "Montserrat", sans-serif;
+}
 .frame_background{
     position: absolute;
     left: -10px;
@@ -11,79 +14,65 @@ a{
     font-size: 34.85px;
     color:white;
     margin-left: 80.16px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
 
 }
 
-/* .main {
-    text-decoration: underline;
-    position: relative;
-    top: -223px;
-    font-size: 34.85px;
-    color:white;
-    margin-left: 80.16px;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-} */
 
 .otzuv {
     color: white;
     position: absolute;
-    /* left: 580px; */
-    width: 1550px;
+    /* left: 150px; */
+    width: 1450px;
     text-align: center;
     top: 80px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .input-name {
     position: absolute;
     top: 190px;
-    left: 500px;
+    left: 535px;
     font-size: 24px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    width: 587.71px;
-    height: 60px;
+    width: 400px;
+    height: 45px;
     opacity: 0.5;
 }
 
 .input-email {
     position: absolute;
-    top: 310px;
-    left: 500px;
+    top: 280px;
+    left: 535px;
     font-size: 24px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    width: 587.71px;
-    height: 60px;
+    width: 400px;
+    height: 45px;
     opacity: 0.5;
 }
 
 .review-input{
     position: absolute;
-    top: 430px;
-    left: 500px;
+    top: 370px;
+    left: 535px;
     font-size: 24px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    width: 587.71px;
-    height: 60px;
+    width: 400px;
+    height: 45px;
     opacity: 0.5;
     
 }
 
 .send {
     position: absolute;
-    left: 610px;
-    width: 382px;
-    height: 50px;
+    left: 585px;
+    width: 300px;
+    height: 40px;
     border-radius: 35px;
-    top: 550px;
+    top: 465px;
     opacity: 0.5;
     font-size: 30px;
     color: rgb(150, 150, 150);
@@ -120,7 +109,7 @@ a{
     z-index: 1000;
   }
 
-  .reg{
+.reg{
     position: absolute;
     top: 22px;
     left: 15px;
@@ -132,7 +121,7 @@ a{
     left: 290px;    
 }
 
-.main {
+.main2 {
     text-decoration: underline;
     position: absolute;
     top: 22px;
@@ -140,12 +129,71 @@ a{
     font-size: 34.85px;
     color:white;
     margin-left: 80.16px;
-    font-family: "Inter", sans-serif;
+
     font-weight: bold;
 }
 
-.tour{
+.tour2{
     position: absolute;
     top: 22px;
     left: 810px;
+}
+.main1 {
+    position: absolute;
+    top: 22px;
+    left: 280px;
+    font-size: 34.85px;
+    color:white;
+    margin-left: 80.16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.tour1 {
+    position: absolute;
+    top: 22px;
+    left: 520px;
+}
+.name1{
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    color:white;
+    font-size: 34.85px;
+    
+}
+
+.logout {
+    position: absolute;
+    border: none;
+    background: none;
+    color: white;
+    font-size:34.85px ;
+    top: 22px;
+    left: 1200px;
+    font-weight: bold;
+}
+
+.Backround_description{
+    position: absolute;
+    top: 170px; 
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 25px;
+    width: 500px;
+    opacity: 0.3;
+}
+
+.Description{
+    position: absolute;
+    width: 470px;
+    font-size: 27px;
+    top: 190px;
+    left: 20px;
+    opacity: 0.7;
 }

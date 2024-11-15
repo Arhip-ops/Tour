@@ -4,28 +4,46 @@
 {% endblock %}
 {% block content %}
     <link rel="stylesheet" href="{{url_for('home_app.static', filename = 'css/style.css')}}">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
     <img src="{{url_for('home_app.static', filename = 'images/frame_background.png')}}" alt="" class="frame_background">
+    <div class = "monstrat">
+        {% if flask_login.current_user.is_authenticated %}
+            <h1 class = "name1">Вітаємо, {{flask_login.current_user.name}}!</h1>
+            <a class = "main1" class = "main" href="/">Головна</a>
+            <a class = "tour1" href="/tour/">Путівка</a>
+            <form action="/logout" method="POST">
+                <button class= "logout" type = "submit">Вийти з аканту</button>
+            </form>
+        {% else %}  
+            <a class = "reg" href="/registration/">Реєстрація</a>
+            <a class = "log" href="/login/">Авторизація</a>
+            <a class = "main2"href="/">Головна</a>
+            <a class = "tour2" href="/tour/">Путівка</a>
+        {% endif %}
+        <h1>Головна Сторінка</h1>
+        <h1 class = "otzuv">Залишити відгук</h1>
 
-    <h1>Головна Сторінка</h1>
-    <h1 class = "otzuv">Залишити відгук</h1>
+        <div class = "emailDiv" style = "display: none;">
+            <form method="POST" class = "emailForm" enctype = "multipart/form-data">
+                <h1 class = 'h1'>Письмо успішно надіслано!</h1>
+            </form>
 
-    <div class = "emailDiv" style = "display: none;">
-        <form method="POST" class = "emailForm" enctype = "multipart/form-data">
-            <h1 class = 'h1'>Письмо успішно надіслано!</h1>
+        </div>
+        <form method = "POST">
+            <h1 class = 'name'>Ім'я</h1>
+            <input class = 'input-name' type="text" name = "name" placeholder="Ім'я">
+            <h1 class = 'email'>Пошта</h1>
+            <input class = 'input-email' type="text" name = "email" placeholder="Пошта">
+            <h1 class = 'review'>Відгук</h1>
+            <textarea class = 'review-input' name="review" id="" placeholder="Відгук"></textarea>
+            <button type="submit" class = "send">Надіслати</button>
+                
         </form>
-
+       <h1 class = "Backround_description"> </h1>
+       <h1 class = "Description">Цей сайт створено для того, щоб відображати всі тури, які є в базі даних цього проєкта. Окрім цього тут можно авторизуватися та зареєтруватися, а також вийти з акаунту.<div class=""></div></h1>
     </div>
-    <form method = "POST">
-        <h1 class = 'name'>Ім'я</h1>
-        <input class = 'input-name' type="text" name = "name" placeholder="Ім'я">
-        <h1 class = 'email'>Пошта</h1>
-        <input class = 'input-email' type="text" name = "email" placeholder="Пошта">
-        <h1 class = 'review'>Відгук</h1>
-        <textarea class = 'review-input' name="review" id="" placeholder="Відгук"></textarea>
-        <button type="submit" class = "send">Надіслати</button>
-            
-    </form>
+
+
     <script src = "{{url_for('home_app.static', filename = 'js/home.js')}}"></script>
 {% endblock %}

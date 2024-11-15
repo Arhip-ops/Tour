@@ -1,6 +1,7 @@
 import flask
 from flask_mail import Message
 from main.mail_config import ADMINISTRATION_ADRESS, mail 
+import flask_login
 
 def render_home():
     if flask.request.method ==  "POST":
@@ -10,7 +11,7 @@ def render_home():
         message = Message("message_order",
                            sender = ADMINISTRATION_ADRESS,
                            recipients = ["touragency10.00@gmail.com"],
-                           body = f"Кліент {name} залишив/ла відгук:\n {review}.\n Пошта для зворотнього зв'язку з клієнтом {email}.")
+                           body = f"Клієнт {name} залишив/ла відгук:\n {review}.\nПошта для зворотнього зв'язку з клієнтом {email}.")
 
         mail.send(message)
-    return flask.render_template(template_name_or_list = "home.html")
+    return flask.render_template(template_name_or_list = "home.html", flask_login = flask_login)

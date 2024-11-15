@@ -11,7 +11,6 @@ a{
     font-size: 34.85px;
     color:white;
     margin-left: 80.16px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
 
 }
@@ -28,18 +27,17 @@ a{
     left: 290px;    
 }
 
-.main {
+.main2 {
     position: absolute;
     top: 22px;
     left: 590px;
     font-size: 34.85px;
     color:white;
     margin-left: 80.16px;
-    font-family: "Inter", sans-serif;
     font-weight: bold;
 }
 
-.tour{
+.tour2{
     position: absolute;
     top: 22px;
     left: 810px;
@@ -49,47 +47,97 @@ a{
     position: absolute;
     /* left: 580px;
      */
-    width: 1550px;
+    width: 1450px;
     text-align: center;
     top: 80px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
 }
 
 .inputName{
     position: absolute;
     top: 190px;
-    left: 500px;
+    left: 535px;
     font-size: 24px;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    width: 587.71px;
-    height: 60px;
+    width: 400px;
+    height: 45px;
     opacity: 0.5;
 }
 
 .inputPassword{
     position: absolute;
-    top: 310px;
-    left: 500px;
+    top: 280px;
+    left: 535px;
     font-size: 24px;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 35px;
-    width: 587.71px;
-    height: 60px;
+    width: 400px;
+    height: 45px;
     opacity: 0.5;
 }
 
 .send{
     position: absolute;
-    left: 610px;
-    width: 382px;
-    height: 50px;
+    left: 585px;
+    width: 300px;
+    height: 40px;
     border-radius: 35px;
-    top: 430px;
+    top: 370px;
     opacity: 0.5;
     font-size: 30px;
     color: rgb(150, 150, 150);
+}
+.main2 {
+    position: absolute;
+    top: 22px;
+    left: 590px;
+    font-size: 34.85px;
+    color:white;
+    margin-left: 80.16px;
+    font-weight: bold;
+}
+
+.tour2{
+    position: absolute;
+    top: 22px;
+    left: 810px;
+}
+.main1 {
+    position: absolute;
+    top: 22px;
+    left: 280px;
+    font-size: 34.85px;
+    color:white;
+    margin-left: 80.16px;
+    font-weight: bold;
+}
+.tour1 {
+    position: absolute;
+    top: 22px;
+    left: 520px;
+}
+.name1{
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    color:white;
+    font-size: 34.85px;
+    
+}
+.logout {
+    position: absolute;
+    border: none;
+    background: none;
+    color: white;
+    font-size:34.85px ;
+    top: 22px;
+    left: 1200px;
+    font-weight: bold;
+}
+.monstrat {
+    font-family: "Montserrat", sans-serif;
 }
