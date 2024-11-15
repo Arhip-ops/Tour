@@ -2,13 +2,31 @@
 {% block content %}
     <link rel="stylesheet" href="{{url_for('specific_tour_app.static', filename = 'css/style.css')}}">
     <img src="{{url_for('tour_app.static', filename = 'images/background.png')}}" alt="" class="frame_background">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <img src="{{url_for('tour_app.static', filename = 'images/urls.png')}}" alt="" class="urls">
-    <img src="{{url_for('specific_tour_app.static', filename = 'images/background_tour.png')}}" alt="" class="background_tour">
-    <img src="{{url_for('tour_app.static', filename = 'images/' + tour.title +'.png')}}" alt="" class="image_tour">
-    <h1 class = "title">{{tour.title}}</h1>
-    <h1 class = "date">{{tour.date}}</h1>
-    <h1 class = "country">{{tour.country}}</h1>
-    <h1 class = "price">{{tour.price}} грн</h1>
-    <h1 class = "description">{{tour.description}}</h1>
+    <div class = "monstrat">
+        {% if flask_login.current_user.is_authenticated %}
+            <h1 class = "name1">Вітаємо, {{flask_login.current_user.name}}!</h1>
+            <a class = "main1" class = "main" href="/">Головна</a>
+            <a class = "tour1" href="/tour/">Путівка</a>
+            <form action="/logout" method="POST">
+                <button class= "logout" type = "submit">Вийти з аканту</button>
+            </form>
+        {% else %}  
+            <a class = "reg" href="/registration/">Реєстрація</a>
+            <a class = "log" href="/login/">Авторизація</a>
+            <a class = "main2"href="/">Головна</a>
+            <a class = "tour2" href="/tour/">Путівка</a>
+        {% endif %}
+        
+        <img src="{{url_for('specific_tour_app.static', filename = 'images/background_tour.png')}}" alt="" class="background_tour">
+        <img src="{{url_for('tour_app.static', filename = 'images/' + tour.title +'.png')}}" alt="" class="image_tour">
+        <h1 class = "title">{{tour.title}}</h1>
+        <h1 class = "date">{{tour.date}}</h1>
+        <h1 class = "country">{{tour.country}}</h1>
+        <h1 class = "price">{{tour.price}} грн</h1>
+        <h1 class = "description">{{tour.description}}</h1>
+    </div>
+
 
 {% endblock %}
